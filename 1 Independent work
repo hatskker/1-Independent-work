@@ -1,0 +1,53 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	setlocale(0, "");
+	int choice;
+
+	int a1 = 10; //4байта
+	int a2 = -5; //4байта
+	int a3 = 0; //4байта
+	int a4 = 100; //4байта
+	int a5 = -25; //4байта
+
+	short s1 = 100; //2байта
+	short s2 = -50; //2байта
+	short s3 = 0; //2байта
+	short s4 = 32767; //2байта
+	short s5 = -10; //2байта
+
+	float f1 = 3.54; //4байта
+	float f2 = -0.32; //4байта
+	float f3 = 100.0; //4байта
+	float f4 = 2.71; //4байта
+	float f5 = -9.8; //4байта
+
+	double d1 = 0.0001; //8байта
+	double d2 = 3.4536; //8байта
+	double d3 = 123.456; //8байта
+	double d4 = 0.001; //8байта
+	double d5 = 999.999; //8байта
+
+	bool flagl = true; //1байт
+	bool flags = false; //1байта
+
+	char c1 = 'a'; //1байта
+	char c2 = 'b'; //1байта
+	char c3 = '1'; //1байта
+	char c4 = '@'; //1байта
+	char c5 = 'S'; //1байта
+
+	string str1 = "Helllo"; 
+	string str2 = "word";
+	string str3 = "piZZaa";
+	string str4 = "1234";
+	string str5 = "popit";
+
+	int a1 = 10;
+	cout << "a1 = " << a1 << " | тип: int, размер: 4 б." << endl;
+	int a2 = -5;
+	cout << "a2 = " << a2 << "| тип: int, размер: 4 б." << endl;
+	int a3 = 0;
+	cout << "a3 = " << a3 << "| тип: int, размер: 4 б." << endl;
+}
