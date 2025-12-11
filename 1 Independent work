@@ -1,53 +1,95 @@
 #include <iostream>
+#include <string>
 using namespace std;
 
 int main() {
-	setlocale(0, "");
-	int choice;
+    setlocale(0, "");
 
-	int a1 = 10; //4байта
-	int a2 = -5; //4байта
-	int a3 = 0; //4байта
-	int a4 = 100; //4байта
-	int a5 = -25; //4байта
+    // Целые числа (int) — 4 байта
+    int a1 = 10;
+    int a2 = -5;
+    int a3 = 0;
+    int a4 = 100;
+    int a5 = -25;
 
-	short s1 = 100; //2байта
-	short s2 = -50; //2байта
-	short s3 = 0; //2байта
-	short s4 = 32767; //2байта
-	short s5 = -10; //2байта
+    // Короткие целые (short) — 2 байта
+    short s1 = 100;
+    short s2 = -50;
+    short s3 = 0;
+    short s4 = 32767;
+    short s5 = -10;
 
-	float f1 = 3.54; //4байта
-	float f2 = -0.32; //4байта
-	float f3 = 100.0; //4байта
-	float f4 = 2.71; //4байта
-	float f5 = -9.8; //4байта
+    // Числа с плавающей точкой (float) — 4 байта
+    float f1 = 3.54f;
+    float f2 = -0.32f;
+    float f3 = 100.0f;
+    float f4 = 2.71f;
+    float f5 = -9.8f;
 
-	double d1 = 0.0001; //8байта
-	double d2 = 3.4536; //8байта
-	double d3 = 123.456; //8байта
-	double d4 = 0.001; //8байта
-	double d5 = 999.999; //8байта
+    // Двойной точности (double) — 8 байт
+    double d1 = 0.0001;
+    double d2 = 3.4536;
+    double d3 = 123.456;
+    double d4 = 0.001;
+    double d5 = 999.999;
 
-	bool flagl = true; //1байт
-	bool flags = false; //1байта
+    // Логический тип (bool) — 1 байт
+    bool flag1 = true;
+    bool flag2 = false;
 
-	char c1 = 'a'; //1байта
-	char c2 = 'b'; //1байта
-	char c3 = '1'; //1байта
-	char c4 = '@'; //1байта
-	char c5 = 'S'; //1байта
+    // Символы (char) — 1 байт
+    char c1 = 'a';
+    char c2 = 'b';
+    char c3 = '1';
+    char c4 = '@';
+    char c5 = 'S';
 
-	string str1 = "Helllo"; 
-	string str2 = "word";
-	string str3 = "piZZaa";
-	string str4 = "1234";
-	string str5 = "popit";
+    // Строки (string)
+    string str1 = "Hello";
+    string str2 = "world";
+    string str3 = "pizza";
+    string str4 = "1234";
+    string str5 = "popit";
 
-	int a1 = 10;
-	cout << "a1 = " << a1 << " | тип: int, размер: 4 б." << endl;
-	int a2 = -5;
-	cout << "a2 = " << a2 << "| тип: int, размер: 4 б." << endl;
-	int a3 = 0;
-	cout << "a3 = " << a3 << "| тип: int, размер: 4 б." << endl;
+    // Вывод всех переменных в консоль по шаблону
+    cout << "a1 = " << a1 << " | тип: int, размер: 4 б." << endl;
+    cout << "a2 = " << a2 << " | тип: int, размер: 4 б." << endl;
+    cout << "a3 = " << a3 << " | тип: int, размер: 4 б." << endl;
+    cout << "a4 = " << a4 << " | тип: int, размер: 4 б." << endl;
+    cout << "a5 = " << a5 << " | тип: int, размер: 4 б." << endl;
+
+    cout << "s1 = " << s1 << " | тип: short, размер: 2 б." << endl;
+    cout << "s2 = " << s2 << " | тип: short, размер: 2 б." << endl;
+    cout << "s3 = " << s3 << " | тип: short, размер: 2 б." << endl;
+    cout << "s4 = " << s4 << " | тип: short, размер: 2 б." << endl;
+    cout << "s5 = " << s5 << " | тип: short, размер: 2 б." << endl;
+
+    cout << "f1 = " << f1 << " | тип: float, размер: 4 б." << endl;
+    cout << "f2 = " << f2 << " | тип: float, размер: 4 б." << endl;
+    cout << "f3 = " << f3 << " | тип: float, размер: 4 б." << endl;
+    cout << "f4 = " << f4 << " | тип: float, размер: 4 б." << endl;
+    cout << "f5 = " << f5 << " | тип: float, размер: 4 б." << endl;
+
+    cout << "d1 = " << d1 << " | тип: double, размер: 8 б." << endl;
+    cout << "d2 = " << d2 << " | тип: double, размер: 8 б." << endl;
+    cout << "d3 = " << d3 << " | тип: double, размер: 8 б." << endl;
+    cout << "d4 = " << d4 << " | тип: double, размер: 8 б." << endl;
+    cout << "d5 = " << d5 << " | тип: double, размер: 8 б." << endl;
+
+    cout << "flag1 = " << flag1 << " | тип: bool, размер: 1 б." << endl;
+    cout << "flag2 = " << flag2 << " | тип: bool, размер: 1 б." << endl;
+
+    cout << "c1 = " << c1 << " | тип: char, размер: 1 б." << endl;
+    cout << "c2 = " << c2 << " | тип: char, размер: 1 б." << endl;
+    cout << "c3 = " << c3 << " | тип: char, размер: 1 б." << endl;
+    cout << "c4 = " << c4 << " | тип: char, размер: 1 б." << endl;
+    cout << "c5 = " << c5 << " | тип: char, размер: 1 б." << endl;
+
+    cout << "str1 = " << str1 << " | тип: string, размер: не фиксирован" << endl;
+    cout << "str2 = " << str2 << " | тип: string, размер: не фиксирован" << endl;
+    cout << "str3 = " << str3 << " | тип: string, размер: не фиксирован" << endl;
+    cout << "str4 = " << str4 << " | тип: string, размер: не фиксирован" << endl;
+    cout << "str5 = " << str5 << " | тип: string, размер: не фиксирован" << endl;
+
+    return 0;
 }
